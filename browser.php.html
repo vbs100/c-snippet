@@ -1,0 +1,1663 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+
+
+
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.08 [en] (Win95; I) [Netscape]">
+   <title>The SNIPPETS Portable C archive</title>
+   <link target="main">
+   <style="text css=""></style="text>
+   
+   <link rel="shortcut icon" href="http://c.snippets.org/C.gif" type="image/gif">
+</head><body background="browser.php_files/code.jpg">
+
+<a name="TOP"></a>
+
+
+<center><b><font size="+3">The SNIPPETS Portable C Source Code Archive</font></b>
+<hr align="center" width="80%">
+
+Tuesday, 03-Nov-2009, 01:37:45 GMT<br>
+Last updated: 26-Nov-2007, 15:45:38 GMT<br>
+
+<hr align="center" width="65%">
+Archivist: <a href="mailto:rbs@snippets.org">Bob Stout</a>
+<hr align="center" width="50%">
+<br>
+</center>
+
+<table width="100%"><tbody><tr><td>
+ <table><tbody><tr>
+ <td valign="center"><a href="http://c.snippets.org/index.php#TOP">
+ 	<img src="browser.php_files/back.jpg" alt="Back" border="0"></a></td>
+ <td>
+ <table bgcolor="#ffffcc" border="1" width="100%">
+  <tbody><tr>
+  <th rowspan="10" bgcolor="#ffffff" valign="center">O/S code:</th>
+  <td>DOS</td><td>DOS</td></tr>
+  <tr><td>Unx</td><td>Unix</td></tr>
+  <tr><td>Mac</td><td>Macintosh</td></tr>
+  <tr><td>W32</td><td>Win32</td></tr>
+  <tr><td>D/W</td><td>DOS and Win32</td></tr>
+  <tr><td>Nov</td><td>Novell</td></tr>
+  <tr><td>DNt</td><td>General DOS network</td></tr>
+  <tr><td>any</td><td>Generally portable</td></tr>
+  <tr><td>n/a</td><td>not applicable</td></tr>
+  </tbody></table></td></tr>
+ </tbody></table></td>
+ <td align="right" valign="center">
+ <hr><p>
+ A minimum screen size of 600 x 800 is recommended<br>
+ for viewing the SNIPPETS file browser</p><p>
+ </p><hr>
+ </td></tr><tr>
+</tr></tbody></table><br>
+
+<pre>
+</pre>
+
+
+<table bgcolor="#ffffcc" border="1"><tbody><tr bgcolor="#ffffff">
+<th colspan="2">Index</th>
+</tr><tr><td>
+
+<form method="get">
+<select name="sect">
+<option value="1">General-purpose header files
+</option><option value="2">Miscellaneous C-callable functions
+</option><option value="3">Extensible C to determine which archiver was used on a packed file
+</option><option value="4">Functions to read configuration files
+</option><option value="5">Portable file operations
+</option><option value="6">Assorted string manipulation functions, some unique, some for porting
+</option><option value="7">Assorted (sic) sorting functions
+</option><option value="8">Mark Corgan's functions for indexing and looking up data in text files
+</option><option value="9">Assorted math functions
+</option><option value="10">Bob Stout's statistical analysis package
+</option><option value="12">Random number functions
+</option><option value="13">Cliff Rhodes' package of unsigned integer math for arbitrarily large numbers
+</option><option value="14">Various ways of computing PI to ridiculous lengths
+</option><option value="15">Numerical &lt;=&gt; string conversion functions
+</option><option value="16">Multi-dimensional array functions
+</option><option value="17">Bit-level operations
+</option><option value="18">Auke Reitsma's comprehensive linked list functions
+</option><option value="19">Auke Reitsma's finite state machine (FSM) functions
+</option><option value="20">Frank Mitchell's \"Bushy\" (B-tree) package
+</option><option value="21">Peter Yard's double ended queue functions
+</option><option value="22">Bob Stout's fast and simple double ended queue functions
+</option><option value="23">Dustin Puryear's stack managment functions
+</option><option value="24">Jerry Coffin's hash table functions
+</option><option value="25">J. Kercheval's PD regular expression comparator
+</option><option value="26">Functions to match similar sounding strings
+</option><option value="27">Ray Gardner's scalar date functions plus other date and time functions
+</option><option value="29">Jerry Coffin's word wrapping functions
+</option><option value="30">Various CRC and checksum functions
+</option><option value="31">Craig Morrison's registration key functions
+</option><option value="32">Bob Stout's functions to get command line options
+</option><option value="33">String searching functions
+</option><option value="37">Walter Bright's memory allocation debugging package
+</option><option value="38">Jeff Dunlop's memory allocation debugging package
+</option></select></form></td><td>
+<input value="Go" type="submit">
+
+</td></tr></tbody></table>
+
+<pre>
+</pre>
+
+<a name="1"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">General-purpose header files</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ascii.h">Ascii.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convenient enumeration for ASCII control characters</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=big_mall.h">Big_Mall.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>D/W</td>
+<td>Portably allocate memory &gt; 64Kb</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=cast.h">Cast.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Cast any object to any type</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dirport.how">Dirport.How</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Brief tutorial on DIRPORT.H and DIRPORT.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dirport.h">Dirport.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Write portable directory code for various compilers &amp; OS's</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dirport.c">Dirport.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>DOS, Win32 and Unix/Linux (sic!) support functions for DIRPORT.H</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=extkword.h">Extkword.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Correct extended keywords syntax</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=hilobyte.h">Hilobyte.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Extract high, low bytes from an int</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mk_fp.h">Mk_Fp.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>D/W</td>
+<td>Makes sure the Intel MK_FP() macro is defined</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=minmax.h">Minmax.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Macros &amp; typesafe C++ templates for min() and max()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=metric.h">Metric.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>English &lt;-&gt; Metric and other conversion macros</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pi.h">Pi.H</a></td>
+<td><font size="-1">01-Dec-2003</font></td>
+<td>any</td>
+<td>Useful definitions using PI</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=round.h">Round.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Rounding macros</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=sniptype.h">Sniptype.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Common include file for SNIPPETS data types and macros</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stat.h">Stat.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>D/W</td>
+<td>Posix compliant sys/stat additions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stringiz.h">Stringiz.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Macros to use the ANSI/ISO preprocessor "stringize" macro</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="2"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Miscellaneous C-callable functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=a2e.h">A2E.H</a></td>
+<td><font size="-1">27-Aug-2004</font></td>
+<td>any</td>
+<td>Header file for A2E.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=a2e.c">A2E.C</a></td>
+<td><font size="-1">27-Aug-2004</font></td>
+<td>any</td>
+<td>ASCII &lt;=&gt; EBCDIC conversions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=toascii.c">Toascii.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>EBCDIC-ASCII conversion arrays</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bastrngs.h">Bastrngs.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for BASTRNGS.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bastrngs.c">Bastrngs.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>BASIC-like string functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ccard.h">Ccard.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for credit card validation functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ccard.c">Ccard.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Credit card validation functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ccardplv.h">Ccardplv.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Patch level include file for credit card validation</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ctrlprnt.h">Ctrlprnt.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for CTRLPRNT.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ctrlprnt.c">Ctrlprnt.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Print a line, displaying Ctrl characters</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=errors.h">Errors.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for SNIPPETS formatted error handlers</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=err_exit.c">Err_Exit.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Print formatted error message to stderr and exit</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ferrorf.c">Ferrorf.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Has ferrorf() and cant() for formatted error messages</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fscanbin.h">Fscanbin.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for FSCANBIN.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fscanbin.c">Fscanbin.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Scan binary fields via format string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=isisbn.h">Isisbn.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for  ISISBN.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=isisbn.c">Isisbn.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Validate ISBN (book) numbers</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=memrev.h">Memrev.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for MEMREV.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=memrev.c">Memrev.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Assymetrical memory swap</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rolldice.h">Rolldice.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for ROLLDICE.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rolldice.c">Rolldice.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Roll specified # of dice, each with speficied # of faces</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strucfil.h">Strucfil.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for STRUCFIL.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strucfil.c">Strucfil.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Read/write structures to/from a file</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=windchil.h">Windchil.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for WINDCHIL.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=windchil.c">Windchil.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Compute wind chill factor</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="3"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Extensible C to determine which archiver was used on a packed file</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=whicharc.doc">Whicharc.Doc</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>n/a</td>
+<td>Information about archive detection</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=whicharc.h">Whicharc.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Prototype declarations for WHICHARC.CPP</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="4"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Functions to read configuration files</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ini.h">Ini.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for INI.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ini.c">Ini.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Read Win-style (i.e. with section headers) initialization file data</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=cfg.h">Cfg.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for CFG.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=cfg.c">Cfg.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Read configuration file data</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=cfg.tst">Cfg.Tst</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Test data file for CFG.C #ifdef TEST section</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=initvars.h">Initvars.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for INITVARS.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=initvars.c">Initvars.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Read data into variables</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=initvars.tst">Initvars.Tst</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Test data file for INITVARS.C #ifdef TEST section</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="5"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Portable file operations</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=snipfile.h">Snipfile.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for portable file functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ansiflen.c">Ansiflen.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>ANSI-compliant file size function in C and C++</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=existsx.c">Existsx.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>POSIX-compliant functions to search paths for files</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fcompare.c">Fcompare.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Compare 2 files for equality</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fopenx.c">Fopenx.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Open files using EXISTSX.C path conventions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=srchfile.c">Srchfile.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Search files for text, forwards or backwards</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=textmod.c">Textmod.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>D/O</td>
+<td>Demo how to change lines in a text file</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=wb_fcopy.c">Wb_Fcopy.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Fast file copy</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=wb_fapnd.c">Wb_Fapnd.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Fast file append</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=update.h">Update.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for UPDATE.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=update.c">Update.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Automate .BAK file generation</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=redirect.h">Redirect.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for Redirect.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=redirect.c">Redirect.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>General purpose I/O redirection functions</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="6"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Assorted string manipulation functions, some unique, some for porting</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=snip_str.h">Snip_Str.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for SNIPPETS string functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pluraltx.how">Pluraltx.How</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>How the plural text macros in SNIP_STR.H work</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=memmem.c">Memmem.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Like strstr(), but for non-text buffers</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fmemmem.c">Fmemmem.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Like memmem() above, but for large DOS buffers</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=sstrcpy.c">Sstrcpy.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Overlapping strcpy() and strcat() work-alikes</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=sstrdel.c">Sstrdel.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Delete multiple substrings from a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stptok.c">Stptok.C</a></td>
+<td><font size="-1">04-Mar-2004</font></td>
+<td>any</td>
+<td>Improved tokenizing function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strchcat.c">Strchcat.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Append a single character to a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strdel.c">Strdel.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Delete a section of a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strdelch.c">Strdelch.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Delete specific character(s) in a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strdup.c">Strdup.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Portable strdup()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strecpy.c">Strecpy.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Like strcpy, but returns pointer to NUL</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stristr.c">Stristr.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Case-insensitive strstr() work-alike</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strrepl.c">Strrepl.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Replace substrings</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strrev.c">Strrev.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Reverse a string in place using XOR swapping</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strrpbrk.c">Strrpbrk.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Like ANSI/ISO strpbrk(), but searches from end of string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strupr.c">Strupr.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Portable strupr() strlwr()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=translat.c">Translat.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Translate string w/ C-style escape sequences</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=xstrcat.c">Xstrcat.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>String concatenation function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ruleline.c">Ruleline.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Create various styles of text ruler lines</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rmallws.c">Rmallws.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Remove all whitespace from a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rmlead.c">Rmlead.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Remove leading whitespace from a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rmtrail.c">Rmtrail.C</a></td>
+<td><font size="-1">24-Sep-2003</font></td>
+<td>any</td>
+<td>Remove trailing whitespace from a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=notrail.c">Notrail.C</a></td>
+<td><font size="-1">24-Sep-2003</font></td>
+<td>any</td>
+<td>Remove trailing whitespace from a string in a single pass</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=trim.c">Trim.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Trim leading, trailing, &amp; embedded spaces</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lv1ws.c">Lv1Ws.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert all whitespace in a string to single spaces</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=permute1.c">Permute1.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Returns permutations of an input string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=permute2.c">Permute2.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Print all permutations of an input sting</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="7"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Assorted (sic) sorting functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=snipsort.h">Snipsort.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for SNIPPETS sorting functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=hugesort.c">Hugesort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Quicksort using huge pointers</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ll_msort.c">Ll_Msort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Linked list mergesort</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ll_qsort.c">Ll_Qsort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Linked list quicksort</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rg_isort.c">Rg_Isort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Insertion sort function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rg_qsort.c">Rg_Qsort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Non-Recursive ANSI/ISO quicksort function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rgiqsort.c">Rgiqsort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Recursive ANSI/ISO quicksort function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rg_ssort.c">Rg_Ssort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>ANSI/ISO quicksort-compatible shellsort function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strsort.c">Strsort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>(Shell) Sort a string array</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=binsrch.h">Binsrch.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for binary searchfunctions in C &amp; C++</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=binsrch.c">Binsrch.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Binary search in C &amp; C++</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="8"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Mark Corgan's functions for indexing and looking up data in text files</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=indxlook.h">Indxlook.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for INDEX.C and LOOKUP.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=index.c">Index.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Create a binary searchable index file from a text file</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lookup.c">Lookup.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Search a text file using a binary search index</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="9"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Assorted math functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=snipmath.h">Snipmath.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for SNIPPETS math functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dtotp6.h">Dtotp6.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Header file for DTOTP6.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dtotp6.c">Dtotp6.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Convert between Turbo Pascal 6-byte reals and C doubles</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bcdl.c">Bcdl.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>BCD math (to/from long) functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bcdd.c">Bcdd.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>BCD math (to/from double) functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bcdd.doc">Bcdd.Doc</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>n/a</td>
+<td>Manual pages for BCDD.C functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=combin.c">Combin.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Compute combinations without overflow</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=cubic.c">Cubic.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Solve cubic equations</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dbl2long.c">Dbl2Long.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Rounds doubles to longs</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dblround.c">Dblround.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Rounds a double to nearest whole number</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dblround.how">Dblround.How</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>How DBLROUND.C works</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=etphi.c">Etphi.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Compute Euler's Totient function (phi)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=factoryl.c">Factoryl.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Factorial, combinations, permutations</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fibo.c">Fibo.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Return any term in the Fibonacci series</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=frand.c">Frand.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Return random double in the range of 0.0 to 1.0</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ipow.c">Ipow.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Raise a number to an integer power</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ispow2.c">Ispow2.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Is a number an integral power of 2?</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=isqrt.c">Isqrt.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Integer square root</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ldfloor.c">Ldfloor.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Long double floor</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=logscale.c">Logscale.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Fast logarithmic integer scaling function</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=msb2ieee.c">Msb2Ieee.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert MSBIN format to/from IEEE float</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=perm_idx.c">Perm_Idx.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Determine permutation index</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rad2deg.c">Rad2Deg.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert radians &lt;=&gt; degrees</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rnd_div.c">Rnd_Div.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Integer division with rounding</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=parity.h">Parity.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for PARITY.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=parity.c">Parity.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Compute parity for any integral type</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=triglib.h">Triglib.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for TRIGLIB.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=triglib.c">Triglib.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Comprehensive trig functions in radians, degrees, grads</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="10"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Bob Stout's statistical analysis package</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mathstat.h">Mathstat.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for statistical functions in C and C++</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mathstat.c">Mathstat.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Statistical functions in C and C++</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="12"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Random number functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rand1.c">Rand1.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Random number generator</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rand2.c">Rand2.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Random number generator</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=rg_rand.c">Rg_Rand.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Minimal random number generator</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="13"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Cliff Rhodes' package of unsigned integer math for arbitrarily large numbers</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bignum.h">Bignum.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header declaring the BigNum struct and prototypes</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bignum1.c">Bignum1.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Add, subtract, and multiply BigNum's</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bignum2.c">Bignum2.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Divide BigNum's</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bigtest.c">Bigtest.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Test and demo program using BigNum's</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="14"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Various ways of computing PI to ridiculous lengths</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=spigot.c">Spigot.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Calculate PI to ~1,000 digits using integer math</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pi.c">Pi.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Calculate PI to 8,000+ digits</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pi8.c">Pi8.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Another PI calculator</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pi8.nfo">Pi8.Nfo</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>A discourse on the PI8.C algorithm</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pi_agm.c">Pi_Agm.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Calculate PI to 10's of thousands of digits</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="15"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Numerical &lt;=&gt; string conversion functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=numcnvrt.h">Numcnvrt.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for SNIPPETS numerical &lt;=&gt; string conversions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bascnvrt.c">Bascnvrt.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert radix of a numeric string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=commaflt.c">Commaflt.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Format doubles using commas and variable precision</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=commafmt.c">Commafmt.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Format long integers using commas</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=eng.c">Eng.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert floating point value to engineering notation</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=eval.c">Eval.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Simple arithmetic expression evaluator</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=eval.how">Eval.How</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>How EVAL.C works</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fmtmoney.c">Fmtmoney.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Format US dollar amounts into text strings</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=hexorint.c">Hexorint.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Auto-convert hex or decimal strings</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=hstr_i.c">Hstr_I.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert hex string to int</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ltoa.c">Ltoa.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert long to a string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ltostr.c">Ltostr.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>A safer version of ltoa()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ord_text.c">Ord_Text.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Format ordinal numbers in English</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=scanfrac.c">Scanfrac.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Scans/converts text fractions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=str27seg.c">Str27Seg.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert numeric string to 7-segment displays</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=l2roman.c">L2Roman.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert long integers to roman numerals</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=roman2l.c">Roman2L.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert roman numerals to long integers</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="16"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Multi-dimensional array functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=snparray.h">Snparray.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for multi-dimentional array functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=amalloc.c">Amalloc.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Multi-dimensional array allocation (limited to &lt;64K on PC)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mdalloc.c">Mdalloc.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Multi-dimentional array allocte and free (any size)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mdasort.c">Mdasort.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Test program demonstrating array sorting</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="17"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Bit-level operations</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitops.h">Bitops.H</a></td>
+<td><font size="-1">20-Sep-2003</font></td>
+<td>any</td>
+<td>Prototypes, plus macros to set, clear, and test bits</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitops.how">Bitops.How</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>How the BitXxx() macros in BITOPS.H work</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitarray.c">Bitarray.C</a></td>
+<td><font size="-1">20-Sep-2003</font></td>
+<td>any</td>
+<td>Bit array functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitcnt_1.c">Bitcnt_1.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Count bits in a number (fast, clever)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitcnt_2.c">Bitcnt_2.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Count bits in a number (fascinating)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitcnt_3.c">Bitcnt_3.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Count bits in a number (table look-up)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitcnt_4.c">Bitcnt_4.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Count bits in a number (recursive table look-up)</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitcnts.c">Bitcnts.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Benchmark to test BITCNT_x.C functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitfiles.c">Bitfiles.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Read/write bit files</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bitstrng.c">Bitstrng.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Print binary formatted strings</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bstr_i.c">Bstr_I.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Convert binary string to int</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="18"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Auke Reitsma's comprehensive linked list functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=llist.nts">Llist.Nts</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Notes on linked list functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ll_defs.h">Ll_Defs.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Common includes and macros</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lls.h">Lls.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list header</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lls_blob.h">Lls_Blob.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list for Binary Large OBjects</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lls_str.h">Lls_Str.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list for strings</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ll_que.h">Ll_Que.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list as queue</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ll_stack.h">Ll_Stack.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list as stack</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lld.h">Lld.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Doubly linked list header</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lld_blob.h">Lld_Blob.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Doubly linked list for Binary Large OBjects</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lld_str.h">Lld_Str.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Doubly linked list for strings</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lls.c">Lls.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lls_blob.c">Lls_Blob.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Singly linked list BLOB functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lld.c">Lld.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Doubly linked list functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=lld_blob.c">Lld_Blob.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Doubly linked list BLOB functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stack.h">Stack.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for stack management functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stk_defs.h">Stk_Defs.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Common definitions and debugging macros</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stack.c">Stack.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Stack management functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stk_blob.h">Stk_Blob.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for stack management of Binary Large OBjects</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stk_str.h">Stk_Str.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for stack management of strings as BLOB's</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stk_blob.c">Stk_Blob.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Stack management functions for Binary Large OBjects</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=ll_demo.c">Ll_Demo.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Demonstration of linked list functions in action</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="19"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Auke Reitsma's finite state machine (FSM) functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fsm.h">Fsm.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for simplified FSM implementation</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fsm.c">Fsm.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Simplified FSM implementation</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="20"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Frank Mitchell's "Bushy" (B-tree) package</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bushv055.txt">Bushv055.Txt</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Bushy Tree documentation</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=b-license.txt">B-License.Txt</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Bushy Tree free license</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bstuff.h">Bstuff.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Bushy Tree header file</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=btree.c">Btree.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Bushy Tree primary functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=treescan.c">Treescan.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Code for traversing a Bushy Tree</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=btree.mak">Btree.Mak</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Bushy Tree (gnu) make file</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=maintest.c">Maintest.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Bushy Tree test/demo program</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=maintest.bat">Maintest.Bat</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Test/demo DOS/Win build script</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="21"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Peter Yard's double ended queue functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=deque.h">Deque.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file supporting queues, stacks, FIFOs</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=deque.c">Deque.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Functions, including sort and search</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="22"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Bob Stout's fast and simple double ended queue functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=qq.h">Qq.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file supporting queues, stacks, FIFOs</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=qq.c">Qq.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Essential queue, stack, &amp; FIFO functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=qqd.h">Qqd.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file supporting specialized version of QQ for doubles</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=qqd.c">Qqd.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Essential queue, stack, &amp; FIFO functions for doubles</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="23"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Dustin Puryear's stack managment functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stk.h">Stk.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for stack manager</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=stk.c">Stk.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Stack manager - init, push, pop, count</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="24"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Jerry Coffin's hash table functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=hash.h">Hash.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for hash table functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=hash.c">Hash.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Hash table management</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="25"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">J. Kercheval's PD regular expression comparator</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=match.doc">Match.Doc</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Documentation for Match.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=match.h">Match.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=match.c">Match.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Portable source including optional test code</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="26"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Functions to match similar sounding strings</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=phonetic.h">Phonetic.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for all phonetic comparison functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=soundex.c">Soundex.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Standard English soundex</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=soundex4.c">Soundex4.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>English soundex optimized for use with surnames</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=soundex5.c">Soundex5.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Another soundex variant</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=metaphon.c">Metaphon.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Phonetic string matching: English, but better than soundex</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=approx.c">Approx.C</a></td>
+<td><font size="-1">09-Mar-2004</font></td>
+<td>any</td>
+<td>Fuzzy string search</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="27"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Ray Gardner's scalar date functions plus other date and time functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=scaldate.h">Scaldate.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Scalar ("Julian") date header</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=scaldate.c">Scaldate.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Scalar ("Julian") date functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=daynum.c">Daynum.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Return statistics about a given date</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=isdst.c">Isdst.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Determine if a given date is in Daylight Savings Time</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=today.c">Today.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Return today's date as a scalar value</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=dow.c">Dow.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Return day of the week for any date</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=fdate.c">Fdate.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>Dnt</td>
+<td>Return DOS file date as a scalar value</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=cal.c">Cal.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Calendar using Scaldate.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=datetime.h">Datetime.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for other time and date functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=jdn_l.c">Jdn_L.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Long integer Julian Day Number computation</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=addtime.c">Addtime.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Add two times (hh:mm:ss) together, normalizing the result</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=easter.c">Easter.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Determine the date of Easter in any given year</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=moon_age.c">Moon_Age.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Determine the phase of the moon for any given date</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=parsdate.c">Parsdate.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Parse a date string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=parstime.c">Parstime.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Parse a time string</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strftime.h">Strftime.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for STRFTIME.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=strftime.c">Strftime.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Non-locale version of ANSI/ISO strftime()</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="29"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Jerry Coffin's word wrapping functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=w_wrap.h">W_Wrap.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>C header w/ prototypes and enum'ed constants</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=w_wrap.c">W_Wrap.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>C functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=center.c">Center.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Center a wrapped line</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="30"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Various CRC and checksum functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=crc.txt">Crc.Txt</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>n/a</td>
+<td>CRC calculation tutorial</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=crc.h">Crc.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for SNIPPETS CRC and checksum functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=arccrc16.c">Arccrc16.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Compute CRC's using ARC, LZH algorithm</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=crc_16.c">Crc_16.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Calculated 16-bit CRC</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=crc_16f.c">Crc_16F.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Fast 16-bit CRC</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=crc_32.c">Crc_32.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Table lookup 32-bit CRC</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=checksum.c">Checksum.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Calculate checksum</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=checkexe.c">Checkexe.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Checksum protection for executable files</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="31"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Craig Morrison's registration key functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=regkey.h">Regkey.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header file for REGIT.C and CHKREG.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=regit.c">Regit.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Generate registration key</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=chkreg.c">Chkreg.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Validate registration key</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="32"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Bob Stout's functions to get command line options</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getopts.man">Getopts.Man</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>n/a</td>
+<td>Manual for using getopts()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getopts.h">Getopts.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for Getopts.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getopts.c">Getopts.C</a></td>
+<td><font size="-1">26-Nov-2007</font></td>
+<td>any</td>
+<td>Scan command line for switches, filenames, response files</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getoptst.c">Getoptst.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Test program to exercise getopts()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=palnfilt.c">Palnfilt.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Palindrome filter, demo for Getopts.C</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getoptsl.man">Getoptsl.Man</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>n/a</td>
+<td>Manual for using getopts_lite()</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getoptsl.h">Getoptsl.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Header for getopts lite</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=getoptsl.c">Getoptsl.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>"Getopts Lite" - Smaller &amp; simpler than full GETOPTS</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="33"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">String searching functions</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=search.h">Search.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>SNIPPETS Header for string searching functions</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=pbmsrch.c">Pbmsrch.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Pratt-Boyer-Moore string search</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bmhsrch.c">Bmhsrch.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Case-sensitive Boyer-Moore-Horspool search</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bmhisrch.c">Bmhisrch.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Case-insensitive Boyer-Moore-Horspool search</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=bmhasrch.c">Bmhasrch.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>any</td>
+<td>Case-insensitive BMH search w/ accented chars</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="37"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Walter Bright's memory allocation debugging package</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mem.txt">Mem.Txt</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>n/a</td>
+<td>Information on the Mem package</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=toolkit.h">Toolkit.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Compiler-independent portability header</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mem.h">Mem.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Mem package header</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=mem.c">Mem.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Mem package code</td></tr>
+</tbody></table>
+<pre>
+</pre>
+<a name="38"></a>
+<table bgcolor="#ffffcc" border="1" width="100%">
+<tbody><tr bgcolor="#ffffff">
+<th width="100"><a href="#TOP"><img src="browser.php_files/tbl_index.jpg" alt="Back to index" border="0"></a></th>
+<th colspan="3">Jeff Dunlop's memory allocation debugging package</th></tr>
+<tr bgcolor="#ffffff"><th width="100">File</th>
+<th width="75">Mod Date</th>
+<th width="50">O/S</th>
+<th>Description</th></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=jmalloc.h">Jmalloc.H</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Jmalloc package header</td></tr>
+<tr><td><a href="http://c.snippets.org/snip_lister.php?fname=jmalloc.c">Jmalloc.C</a></td>
+<td><font size="-1">16-Sep-2003</font></td>
+<td>DOS</td>
+<td>Like MEM, more functions, check the copyright</td></tr>
+</tbody></table>
+<pre>
+</pre>
+
+<a href="#TOP"><img src="browser.php_files/top.jpg"></a><p>
+
+</p><pre>
+</pre>
+
+<a name="SUPPORT"></a>
+<b><u>Please support SNIPPETS!</u></b>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" value="_xclick" type="hidden">
+<input name="business" value="rbs@snippets.org" type="hidden">
+<input name="item_name" value="SNIPPETS.ORG" type="hidden">
+<input name="item_number" value="LDSG" type="hidden">
+<input name="cn" value="Comments" type="hidden">
+<input name="currency_code" value="USD" type="hidden">
+<input name="tax" value="0" type="hidden">
+<input src="browser.php_files/x-click-butcc-donate.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" border="0" type="image">
+</form>
+
+<pre>
+</pre>
+
+©2001-2007 by Bob Stout, all rights reserved<br>
+All source code free as noted.<br>
+Tested with:
+<a href="http://getfirefox.com/" title="Get Firefox - Web browsing redefined.">
+	<img src="browser.php_files/getfirefox_large2.png" alt="Get Firefox" border="0" height="60" width="178">
+</a><a href="http://www.microsoft.com/" target="_blank"><img src="browser.php_files/msie.gif" alt="Get MSIE" border="0" height="30" width="90"></a>
+<a href="http://www.opera.com/"><img src="browser.php_files/operalogo.gif" border="0"></a>.
+<a href="http://www.konqueror.org/"><img src="browser.php_files/konqueror.png" border="0"></a>.
+<p>
+Support:
+<a href="http://www.debian.org/"><img src="browser.php_files/openlogo-50.png" border="0"></a>
+<a href="http://www.kubuntu.org/"><img src="browser.php_files/banner-kubuntu.png" border="0"></a>
+<a href="http://www.localcooling.com/ref/?type=link&amp;id=19701"><img src="browser.php_files/180x60.html" border="0" height="60" width="180"></a>
+<a href="http://www.blumentals.net/rapidphp/" target="_blank">
+    <img src="browser.php_files/rapidphp_small.gif" alt="Rapid PHP" border="0" height="31" width="88"></a>
+<a href="http://www.image-magicians.com/"><img src="browser.php_files/byImage-Magicians.jpg" border="0"></a>
+
+</p></body></html>

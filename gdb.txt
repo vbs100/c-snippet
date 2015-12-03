@@ -1,0 +1,200 @@
+/home/sunyu/.gdbinit:18: Error in sourced command file:
+Undefined command: "argv".  Try "help".
+Reading symbols from /home/sunyu/snippet/a.out...done.
+Breakpoint 1 at 0x8048405: file primes.c, line 6.
+Starting program: /home/sunyu/snippet/a.out 
+
+Breakpoint 1, main () at primes.c:6
+6		memset(a,1,sizeof(a));
+7		for(i=2;i<10001;i++)
+$1 = {16843009 <repeats 10001 times>}
+$2 = {0x1010101 <repeats 10001 times>}
+9			if(!a[i])
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+$3 = 2
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+$4 = 4
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+11			for(j=i;j<10001;j+=i)
+$5 = 2
+$6 = 12
+$7 = {16843009, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009 <repeats 9988 times>}
+Function "j=10000" not defined.
+Function "j==10000" not defined.
+6		memset(a,1,sizeof(a));
+7		for(i=2;i<10001;i++)
+8		{
+9			if(!a[i])
+10				continue;
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+13		}
+14		for(i=2;i<10001;i++)
+15			if(a[i])
+main () at primes.c:9
+9			if(!a[i])
+$8 = {16843009, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 
+  16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 
+  16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 
+  16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 
+  16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 
+  16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 
+  16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009, 0, 16843009...}
+$9 = 3
+11			for(j=i;j<10001;j+=i)
+12				a[j]=0;
+$10 = 3
+11			for(j=i;j<10001;j+=i)
+A debugging session is active.
+
+	Inferior 1 [process 10379] will be killed.
+
+Quit anyway? (y or n) /home/sunyu/.gdbinit:18: Error in sourced command file:
+Undefined command: "argv".  Try "help".
+Reading symbols from /home/sunyu/snippet/a.out...done.
+Breakpoint 1 at 0x8048405: file primes.c, line 7.
+Starting program: /home/sunyu/snippet/a.out 
+
+Breakpoint 1, main () at primes.c:7
+7		memset(a,0xff,sizeof(a));
+8		for(i=2;i<10001;i++)
+$1 = {-1 <repeats 10001 times>}
+3	int a[10001];
+4	int main()
+5	{
+6		int i,j;
+7		memset(a,0xff,sizeof(a));
+8		for(i=2;i<10001;i++)
+9		{
+10			if(!a[i])
+11				continue;
+12			for(j=i+i;j<10001;j+=i)
+A debugging session is active.
+
+	Inferior 1 [process 10681] will be killed.
+
+Quit anyway? (y or n) /home/sunyu/.gdbinit:18: Error in sourced command file:
+Undefined command: "argv".  Try "help".
+Reading symbols from /home/sunyu/snippet/a.out...done.
+Breakpoint 1 at 0x8048405: file primes.c, line 7.
+Starting program: /home/sunyu/snippet/a.out 
+
+Breakpoint 1, main () at primes.c:7
+7		memset(a,0xff,sizeof(a));
+8		for(i=2;i<10001;i++)
+$1 = {-1 <repeats 10001 times>}
+10			if(!a[i])
+$2 = -1
+!a[i]: event not found
+$3 = -1
+p p a[i]
+No symbol "p" in current context.
+p "p p a[i]"
+$4 = "p p a[i]"
+expansion:  History expansion on command input is on.
+filename:  The filename in which to record the command history is "/home/sunyu/snippet/.gdb_history".
+save:  Saving of the history record on exit is on.
+size:  The size of the command history is 1000000.
+Undefined show command: "expansion".  Try "help show".
+History expansion on command input is on.
+$5 = -1
+$6 = 0
+12			printf("%d ",i);
+13			for(j=i+i;j<10001;j+=i)
+Undefined command: "qy".  Try "help".
+A debugging session is active.
+
+	Inferior 1 [process 10999] will be killed.
+
+Quit anyway? (y or n) /home/sunyu/.gdbinit:18: Error in sourced command file:
+Undefined command: "argv".  Try "help".
+Reading symbols from /home/sunyu/snippet/a.out...done.
+Breakpoint 1 at 0x80483d5: file primes.c, line 7.
+Starting program: /home/sunyu/snippet/a.out 
+
+Breakpoint 1, main () at primes.c:7
+7		int i,j,k=0;
+2	#include <string.h>
+3	int a[10001];
+4	int primes[1230];
+5	int main()
+6	{
+7		int i,j,k=0;
+8		memset(a,0xff,sizeof(a));
+9		for(i=2;i<10001;i++)
+10		{
+11			if(!a[i])
+12				continue;
+13			primes[k++]=i;
+14			for(j=i+i;j<10001;j+=i)
+15				a[j]=0;
+16		}
+17	}
+Line number 18 out of range; primes.c has 17 lines.
+main () at primes.c:17
+17	}
+$1 = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 
+  199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 
+  443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 
+  701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 
+  983, 991, 997, 1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 1069, 1087, 1091, 1093, 1097, 1103, 1109, 1117, 1123, 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193, 1201, 1213, 1217, 
+  1223...}
+$2 = 0
+$3 = 9973
+$4 = 2
+A debugging session is active.
+
+	Inferior 1 [process 13420] will be killed.
+
+Quit anyway? (y or n) /home/sunyu/.gdbinit:18: Error in sourced command file:
+Undefined command: "argv".  Try "help".
+Reading symbols from /home/sunyu/snippet/a.out...done.
+Breakpoint 1 at 0x804845c: file primes.c, line 20.
+Starting program: /home/sunyu/snippet/a.out 
+
+Breakpoint 1, main () at primes.c:20
+20		make_primes();
+21	}
+$1 = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 
+  199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 
+  443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 
+  701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 
+  983, 991, 997, 1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 1069, 1087, 1091, 1093, 1097, 1103, 1109, 1117, 1123, 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193, 1201, 1213, 1217, 
+  1223...}
+$2 = 0
+$3 = 9973
+A debugging session is active.
+
+	Inferior 1 [process 13647] will be killed.
+
+Quit anyway? (y or n) /home/sunyu/.gdbinit:18: Error in sourced command file:
+Undefined command: "argv".  Try "help".
+Reading symbols from /home/sunyu/snippet/a.out...done.
+Breakpoint 1 at 0x804840d: file 5108.c, line 7.
+Starting program: /home/sunyu/snippet/a.out < in
+
+Breakpoint 1, main () at 5108.c:7
+7			if(n==1)
+11				int factor[32],index=0;
+13				d=2;
+14				for(k=0;n%d==0;k++)
+$1 = 3
+16				if(k)
+18				for(d=3;d*d<=n;d+=2)
+25				if(index==0)
+$2 = 0
+26					m=1;
+A debugging session is active.
+
+	Inferior 1 [process 9093] will be killed.
+
+Quit anyway? (y or n) 
